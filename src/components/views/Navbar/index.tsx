@@ -15,6 +15,7 @@ import DropDown from "./Subcomponents/DropDown";
 import MobileNavbar from "./Subcomponents/MobileNavbar";
 const Navbar = () => {
   const [isNabarOpen, setIsNabarOpen] = useState<boolean>(false);
+  const [cartItemNumber, setCartItemNumber] = useState<number>(0);
 
   return (
     <div>
@@ -51,13 +52,13 @@ const Navbar = () => {
             <BiSearch />
             <input
               type="text"
-              className="pl-1 pr-5 py-1 w-80"
+              className="focus:outline-none pl-1 pr-5 py-1 w-80"
               placeholder="Search In Our Store"
             />
           </div>
           <div className="relative w-11 h-11 rounded-full bg-gray-200 flex justify-center flex-shrink-0 items-center">
             <div className="w-4 h-4 rounded-full bg-pink-400 absolute top-1 right-2 flex justify-center items-center text-xs font-light">
-              3
+              {cartItemNumber}
             </div>
             <BsCart2 size={24} />
           </div>
