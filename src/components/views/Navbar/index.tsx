@@ -26,7 +26,10 @@ const Navbar = () => {
         <div className="hidden lg:flex justify-around items-center w-full">
           <ul className="flex space-x-8 font-medium text-xl text-purple-900">
             {NavbarArray.map((item: NavbarItemType, index: number) => (
-              <li className=" group flex items-center relative cursor-pointer px-3 py-1  rounded-md hover:bg-gray-100">
+              <li
+                key={index}
+                className=" group flex items-center relative cursor-pointer px-3 py-1  rounded-md hover:bg-gray-100"
+              >
                 <Link className="hover:underline" href={item.href}>
                   {item.label}
                 </Link>
