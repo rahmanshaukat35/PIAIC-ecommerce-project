@@ -4,17 +4,17 @@ import ProductCarousel from "@/components/views/ProductCarousel";
 import ProductsType from "@/components/views/ProductsType";
 
 async function GetAllProductsData() {
-  const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
+  // const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return res.json();
+  // if (!res.ok) {
+  //   throw new Error("Failed to fetch data");
+  // }
+  // return res.json();
+  return { response: "hi" };
 }
 
 export default async function Home() {
   const { response } = await GetAllProductsData();
-  console.log("response", response);
 
   return (
     <>
