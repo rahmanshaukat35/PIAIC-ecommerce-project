@@ -13,19 +13,23 @@ export const NavbarArray: Array<NavbarItemType> = [
     dropDownData: [
       {
         label: "Dresses",
-        href: "/female/dresses",
+        href: "/female/dress",
       },
       {
-        label: "Shirts",
-        href: "/female/shirts",
+        label: "T-Shirts",
+        href: "/female/t-shirt",
       },
       {
         label: "Pents",
-        href: "/female/pents",
+        href: "/female/pent",
       },
       {
         label: "Jackets",
-        href: "/female/jackets",
+        href: "/female/jacket",
+      },
+      {
+        label: "Sweaters",
+        href: "/female/sweater",
       },
     ],
   },
@@ -35,20 +39,12 @@ export const NavbarArray: Array<NavbarItemType> = [
     isDropDown: true,
     dropDownData: [
       {
-        label: "Shorts",
-        href: "/male/shorts",
-      },
-      {
-        label: "Shirts",
-        href: "/male/shirts",
-      },
-      {
-        label: "Pents",
-        href: "/male/pents",
+        label: "Sweaters",
+        href: "/male/sweater",
       },
       {
         label: "Jackets",
-        href: "/male/jackets",
+        href: "/male/jacket",
       },
     ],
   },

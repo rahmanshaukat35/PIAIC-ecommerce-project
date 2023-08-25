@@ -10,6 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         primaryWhite: "#FFECE3",
+        opacityDown: "#ffffffba",
+        card1: "#D6D6D8",
+        card2: "#212121",
+        card3: "#EFE1C7",
+        card4: "#D7D7D9",
+        card2_button: "#474747",
       },
     },
   },

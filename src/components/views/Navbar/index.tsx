@@ -18,7 +18,7 @@ const Navbar = () => {
   const [cartItemNumber, setCartItemNumber] = useState<number>(0);
 
   return (
-    <div>
+    <div className="sticky top-0 z-50 bg-opacityDown backdrop-blur-lg rounded-md">
       <div className="py-6 flex justify-between items-center space-x-12">
         <div className="w-36 flex-shrink-0">
           <Image width={500} height={500} src={"/Logo.webp"} alt="main-logo" />
