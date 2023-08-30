@@ -2,6 +2,7 @@ import BASE_PATH_FORAPI from "@/components/shared/BasePath";
 import { responseType } from "@/components/utils/ProductsDataArrayAndType";
 import Hero from "@/components/views/Hero";
 import Jewellery from "@/components/views/Jewellery";
+import NewsLetter from "@/components/views/NewsLetter";
 import ProductCarousel from "@/components/views/ProductCarousel";
 import ProductsType from "@/components/views/ProductsType";
 
@@ -21,10 +22,11 @@ export default async function Home() {
   return (
     <>
       <div>
-        {/* <Hero />
+        <Hero />
         <ProductsType />
-        <ProductCarousel ProductData={response} /> */}
+        <ProductCarousel ProductData={response} />
         <Jewellery />
+        <NewsLetter />
       </div>
     </>
   );

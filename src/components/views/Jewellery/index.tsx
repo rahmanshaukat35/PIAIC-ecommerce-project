@@ -4,15 +4,15 @@ import React from "react";
 const Jewellery = () => {
   return (
     <div className="px-1 text-gray-600">
-      <div className=" font-bold text-4xl flex justify-end py-2">
+      <div className=" font-bold text-4xl flex justify-start md:justify-end py-2">
         <h6 className="max-w-xs">
           Unique and Authentic Vintage Designer Jewellery
         </h6>
       </div>
-      <div className="flex justify-between py-4">
+      <div className="flex flex-col lg:flex-row justify-between py-4">
         <div className=" relative grid gap-10 basis-1/2 grid-cols-2 grid-rows-2">
           <div className="absolute text-gray-200 inset-0 -z-50">
-            <h6 className="text-[9rem] leading-[6.5rem] tracking-wide font-medium">
+            <h6 className="lg:text-[9rem] md:text-[7rem] text-7xl leading-[6.5rem] tracking-wide font-medium">
               Different from others
             </h6>
           </div>
@@ -43,8 +43,8 @@ const Jewellery = () => {
             </p>
           </div>
         </div>
-        <div className="flex basis-1/2">
-          <div className="w-80">
+        <div className="flex flex-col md:flex-row md:py-12 lg:py-0 basis-1/2">
+          <div className=" w-full px-10 md:px-0 py-12 md:py-0 md:w-80">
             <Image
               src={
                 "https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffeature.1118a2f3.png&w=384&q=75"
@@ -54,10 +54,10 @@ const Jewellery = () => {
               height={1000}
             />
           </div>
-          <div className="p-6">
+          <div className="md:p-6 space-y-5">
             <p
               style={{ wordSpacing: "0.8rem" }}
-              className="max-w-[15rem] h-[90%]"
+              className="md:max-w-[15rem] lg:h-[90%]"
             >
               This piece is ethically crafted in our small family-owned workshop
               in Peru with unmatched attention to detail and care. The Natural

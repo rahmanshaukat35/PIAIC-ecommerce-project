@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Navbar from "@/components/views/Navbar";
 import Wrapper from "@/components/shared/Wrapper";
+import Footer from "@/components/views/Footer";
 const inter = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
@@ -23,7 +24,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Wrapper>
           <Navbar />
-          {children}
+          <div className="min-h-screen">{children}</div>
+          <Footer />
         </Wrapper>
       </body>
     </html>
