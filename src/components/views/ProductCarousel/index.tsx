@@ -43,7 +43,7 @@ const ProductCarousel: FC<{ ProductData: Array<oneProductType> }> = ({
     isDragging = true;
     initialX = e.touches[0].clientX;
   }
-  let dataToItrate = ProductData.slice(1, 4);
+  let dataToItrate = ProductData.slice(0, 5);
 
   return (
     <div className="space-y-8 my-8 ">
@@ -56,7 +56,7 @@ const ProductCarousel: FC<{ ProductData: Array<oneProductType> }> = ({
         onMouseMove={mouseMoves}
         onMouseDown={mouseDown}
         onMouseUp={mouseUp}
-        className=" flex lg:flex-row flex-col space-y-4 gap-8 py-4  justify-center items-center"
+        className=" flex lg:flex-row flex-col space-y-4 gap-8 py-4 cursor-pointe justify-center items-center"
         onTouchMove={mouseMovesForMobile}
         onTouchStart={mouseDownForMobile}
         onTouchEnd={mouseUp}

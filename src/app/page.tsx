@@ -7,7 +7,8 @@ import ProductCarousel from "@/components/views/ProductCarousel";
 import ProductsType from "@/components/views/ProductsType";
 
 async function GetAllProductsData() {
-  const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
+  // const res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
+  const res = await fetch("http://localhost:3000/api/products");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
